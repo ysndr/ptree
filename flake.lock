@@ -24,25 +24,47 @@
     },
     "capacitor": {
       "inputs": {
-        "nixpkgs": [
-          "nixpkgs",
-          "nixpkgs-stable"
-        ],
-        "root": []
+        "nixpkgs": "nixpkgs",
+        "root": [
+          "floxpkgs"
+        ]
       },
       "locked": {
         "lastModified": 1660755873,
         "narHash": "sha256-WSf8Lzg0ExXAmTBvHnqgXEsO2JwiVuJRRLPpPKwMDHo=",
-        "ref": "v0",
+        "owner": "flox",
+        "repo": "capacitor",
         "rev": "b79e555f2f07e753b80e2b37304afd28cf72b464",
-        "revCount": 17,
-        "type": "git",
-        "url": "ssh://git@github.com/flox/capacitor"
+        "type": "github"
       },
       "original": {
+        "owner": "flox",
         "ref": "v0",
-        "type": "git",
-        "url": "ssh://git@github.com/flox/capacitor"
+        "repo": "capacitor",
+        "type": "github"
+      }
+    },
+    "capacitor_2": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_3",
+        "root": [
+          "floxpkgs",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1658930237,
+        "narHash": "sha256-76FK9k0zEmzhDVZJdrFxEqO3gx/NkrBt0y5L+dhE/hc=",
+        "owner": "flox",
+        "repo": "capacitor",
+        "rev": "f0bae6897c812bf11dbb8842bc13940305f386f3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "flox",
+        "ref": "v0",
+        "repo": "capacitor",
+        "type": "github"
       }
     },
     "catalog": {
@@ -148,11 +170,11 @@
     "flox": {
       "flake": false,
       "locked": {
-        "lastModified": 1662741296,
-        "narHash": "sha256-pMUYNWYMMOfXj/yDKsz97aVAGX2qxqIEcK0QN/bfiKA=",
+        "lastModified": 1663019242,
+        "narHash": "sha256-oaGVxTpv2S2n9JYWxGuXZb9xiusjeyuumCuDjxYYEVQ=",
         "ref": "main",
-        "rev": "232d0ffdfd092cc7d6a76e6a5df60283c6dff238",
-        "revCount": 3,
+        "rev": "f6c2f17544e7a8b4dce8cbd136ec16e91c4cfdd6",
+        "revCount": 4,
         "type": "git",
         "url": "ssh://git@github.com/flox/flox"
       },
@@ -183,33 +205,10 @@
         "type": "github"
       }
     },
-    "flox-extras_2": {
-      "inputs": {
-        "capacitor": [
-          "nixpkgs",
-          "capacitor"
-        ]
-      },
-      "locked": {
-        "lastModified": 1662056546,
-        "narHash": "sha256-jW8qQJk30mePbp3aGB1LGpzSReG4TTSqS0laV0D8Ihg=",
-        "owner": "flox",
-        "repo": "flox-extras",
-        "rev": "f7f83b596cd29cf50c742d08274da0fcd3549c15",
-        "type": "github"
-      },
-      "original": {
-        "owner": "flox",
-        "repo": "flox-extras",
-        "type": "github"
-      }
-    },
     "floxpkgs": {
       "inputs": {
         "builtfilter": "builtfilter",
-        "capacitor": [
-          "capacitor"
-        ],
+        "capacitor": "capacitor",
         "catalog": "catalog",
         "devshell": "devshell",
         "flox": "flox",
@@ -217,17 +216,15 @@
         "mach-nix": "mach-nix",
         "naersk": "naersk",
         "nix-editor": "nix-editor",
-        "nixpkgs": [
-          "nixpkgs"
-        ],
+        "nixpkgs": "nixpkgs_2",
         "pypi-deps-db": "pypi-deps-db"
       },
       "locked": {
-        "lastModified": 1662762847,
-        "narHash": "sha256-dr/B2NS4lREwiylzG5oJM8bs0vKDIT7pXF0CtJtgTxU=",
+        "lastModified": 1663097911,
+        "narHash": "sha256-Wj8QKkcy0c4bW+83IRu6C4uohdK8JLhH5DN5B7Cgn60=",
         "ref": "refs/heads/master",
-        "rev": "1acaf5289edf357c2e7adae62f918d8406d97f26",
-        "revCount": 227,
+        "rev": "d39ee4195c78ddb5b36856b90e2d2b29d9301fd5",
+        "revCount": 234,
         "type": "git",
         "url": "ssh://git@github.com/flox/floxpkgs"
       },
@@ -311,34 +308,19 @@
       }
     },
     "nixpkgs": {
-      "inputs": {
-        "capacitor": [
-          "capacitor"
-        ],
-        "flox-extras": "flox-extras_2",
-        "nixpkgs": [
-          "nixpkgs",
-          "nixpkgs-stable"
-        ],
-        "nixpkgs-stable": "nixpkgs-stable",
-        "nixpkgs-staging": "nixpkgs-staging",
-        "nixpkgs-unstable": "nixpkgs-unstable",
-        "nixpkgs__catalog__aarch64-darwin": "nixpkgs__catalog__aarch64-darwin",
-        "nixpkgs__catalog__x86_64-darwin": "nixpkgs__catalog__x86_64-darwin",
-        "nixpkgs__catalog__x86_64-linux": "nixpkgs__catalog__x86_64-linux"
-      },
       "locked": {
-        "lastModified": 1662218644,
-        "narHash": "sha256-tEP3x4R37JgDgfC5CylcpZ5zZg3oauVc3Z1fsGUT/Ww=",
-        "ref": "refs/heads/master",
-        "rev": "f109f1bc8b232246a0df438a44b9e433f8526973",
-        "revCount": 98,
-        "type": "git",
-        "url": "ssh://git@github.com/flox/nixpkgs-flox"
+        "lastModified": 1661239211,
+        "narHash": "sha256-pNJzBlSNpWEiFJZnLF2oETYq8cGWx1DJPW33aMtG6n8=",
+        "owner": "flox",
+        "repo": "nixpkgs",
+        "rev": "5e804cd8a27f835a402b22e086e36e797716ef8b",
+        "type": "github"
       },
       "original": {
-        "type": "git",
-        "url": "ssh://git@github.com/flox/nixpkgs-flox"
+        "owner": "flox",
+        "ref": "stable",
+        "repo": "nixpkgs",
+        "type": "github"
       }
     },
     "nixpkgs-stable": {
@@ -385,6 +367,55 @@
       "original": {
         "owner": "flox",
         "ref": "unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "inputs": {
+        "capacitor": "capacitor_2",
+        "flox-extras": [
+          "floxpkgs",
+          "flox-extras"
+        ],
+        "nixpkgs": [
+          "floxpkgs",
+          "nixpkgs",
+          "nixpkgs-stable"
+        ],
+        "nixpkgs-stable": "nixpkgs-stable",
+        "nixpkgs-staging": "nixpkgs-staging",
+        "nixpkgs-unstable": "nixpkgs-unstable",
+        "nixpkgs__catalog__aarch64-darwin": "nixpkgs__catalog__aarch64-darwin",
+        "nixpkgs__catalog__x86_64-darwin": "nixpkgs__catalog__x86_64-darwin",
+        "nixpkgs__catalog__x86_64-linux": "nixpkgs__catalog__x86_64-linux"
+      },
+      "locked": {
+        "lastModified": 1662218644,
+        "narHash": "sha256-tEP3x4R37JgDgfC5CylcpZ5zZg3oauVc3Z1fsGUT/Ww=",
+        "owner": "flox",
+        "repo": "nixpkgs-flox",
+        "rev": "f109f1bc8b232246a0df438a44b9e433f8526973",
+        "type": "github"
+      },
+      "original": {
+        "owner": "flox",
+        "repo": "nixpkgs-flox",
+        "type": "github"
+      }
+    },
+    "nixpkgs_3": {
+      "locked": {
+        "lastModified": 1658826464,
+        "narHash": "sha256-94ZTF0uIX/iZdiD4RJ5f933ak/OM4XLl7hF+gCa4Iuk=",
+        "owner": "flox",
+        "repo": "nixpkgs",
+        "rev": "ce49cb7792a7ffd65ef352dda1110a4e4a204eac",
+        "type": "github"
+      },
+      "original": {
+        "owner": "flox",
+        "ref": "stable",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -443,11 +474,11 @@
     "pypi-deps-db": {
       "flake": false,
       "locked": {
-        "lastModified": 1662755712,
-        "narHash": "sha256-PX/eOWId4d9M0nI6nHn9OuNnjHGqDVDIOtYQBRn/9cM=",
+        "lastModified": 1663059297,
+        "narHash": "sha256-JaD4mhUOLJRNaepE50fOUfaSYRNwMhobyj8HGIxosiQ=",
         "owner": "DavHau",
         "repo": "pypi-deps-db",
-        "rev": "ae0603a7015ad8824a66479c32ea64429f932c7a",
+        "rev": "8aa6ec60bf7ed12c1e1705a2f28be63d8eee4386",
         "type": "github"
       },
       "original": {
@@ -458,9 +489,11 @@
     },
     "root": {
       "inputs": {
-        "capacitor": "capacitor",
-        "floxpkgs": "floxpkgs",
-        "nixpkgs": "nixpkgs"
+        "capacitor": [
+          "floxpkgs",
+          "capacitor"
+        ],
+        "floxpkgs": "floxpkgs"
       }
     }
   },
